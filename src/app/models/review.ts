@@ -3,5 +3,4 @@ export interface Review{
     genre:string;
     fullReview:string;
     game:string;
-    score:number;
 }

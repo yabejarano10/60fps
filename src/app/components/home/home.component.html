@@ -24,9 +24,10 @@
                     <p>
                         {{game.sumary}}
                     </p>
+                    <ngx-stars [readonly]="true" [initialStars]="game.score" [color]="'#420069'"></ngx-stars>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-button>READ</button>
+                    <button (click)="openDetail(game)" mat-button>READ</button>
                 </mat-card-actions>
             </mat-card>
         </div>

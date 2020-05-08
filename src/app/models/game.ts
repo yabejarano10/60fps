@@ -4,4 +4,5 @@ export interface Game{
     genre: string;
     img: string;
     sumary: string;
+    score:number;
 }

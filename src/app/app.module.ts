@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { NgxStarsModule } from 'ngx-stars';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { SliderDirective } from './components/slider/slider.directive';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ReviewDetailComponent } from './components/review-detail/review-detail.component';
+import { RecomendationComponent } from './components/recomendation/recomendation.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ReviewDetailComponent } from './components/review-detail/review-detail.
     SliderComponent,
     SliderDirective,
     ReviewsComponent,
-    ReviewDetailComponent
+    ReviewDetailComponent,
+    RecomendationComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { ReviewDetailComponent } from './components/review-detail/review-detail.
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxStarsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

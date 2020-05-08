@@ -19,7 +19,6 @@ export class ReviewDetailComponent implements OnInit {
               private _gameService:GamesService) { }
 
   ngOnInit() {
-    debugger
     const id = this.route.snapshot.params["id"];
     this.review = this._revService.getReviewDetail(id);
     this.game = this._gameService.getGamebyName(this.review.game);
