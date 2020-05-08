@@ -6,10 +6,9 @@ import { Game } from '../models/game';
 })
 export class GamesService {
 
-  constructor() { }
-
-  getGames(){
-    let games: Game[] = [{
+  games:Game[];
+  constructor() {
+    this.games= [{
       logo: "url(https://cdn.clipart.email/8dd51e8bd0813f1905edbf23bc3832f3_new-icon_256-256.png)",
       name: "League of Legends",
       genre: "MOBA",
@@ -25,14 +24,14 @@ export class GamesService {
     },
     {
       logo:"url(https://cl.buscafs.com/www.levelup.com/public/uploads/images/279759_256x256.jpg)",
-      name: "Valiant hearts",
+      name: "valiant hearts",
       genre: "Plataformas",
       img: "https://ubistatic19-a.akamaihd.net/ubicomstatic/es-mx/global/buy-now/vh_boxshot_thumb_mobile_158505.jpg",
       sumary: "Bello juego XDDDDDDDDDDDDD"
     },
     {
       logo:"url(https://ih1.redbubble.net/image.414755166.4343/flat,128x128,075,t-pad,128x128,f8f8f8.u1.jpg)",
-      name: "Hellbalade",
+      name: "Hellblade",
       genre: "Aventura",
       img: "https://i.ytimg.com/vi/x8Ba8Ope05U/maxresdefault.jpg",
       sumary: "Obra amestra papu"
@@ -51,6 +50,13 @@ export class GamesService {
       img: "https://media.contentapi.ea.com/content/dam/gin/images/2017/01/mass3-keyart.jpg.adapt.crop191x100.628p.jpg",
       sumary: "Obra amestra papu x3 pero ta mejor el 3 :v"
     }]
-    return games;
+   }
+
+  getGames(){
+    return this.games;
+  }
+
+  getGamebyName(name:string){
+    return this.games.find(game => game.name === name);
   }
 }

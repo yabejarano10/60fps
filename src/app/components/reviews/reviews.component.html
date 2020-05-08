@@ -1,0 +1,115 @@
+<div class="reviews-header">
+    <h1>Bienvenido al menú de Reseñas</h1>
+    <p>Aquí encontrarás los distintos géneros, al seleccionar cada uno verás las reseñas subidas.</p>
+</div>
+<div class="genres-menu">
+    <div class="genre-item">
+        <mat-expansion-panel class="accion">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Acción
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a (click)="getIndex(rev.title)" class ="btn text-light rev-title"  *ngFor="let rev of actionRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="terror">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Terror
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="btn text-light rev-title" (click)="getIndex(rev.title)" *ngFor="let rev of terrorRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="rol">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Rol
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of rolRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="aventuras">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Aventuras
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of adventureRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="plataformas">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Plataformas
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of platformRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="metroidvania">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Metroidvania
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of metroidvaniaRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="autos">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Autos
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of carsRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="simuladores">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-dark">
+                Simuladores
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of simulationRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+    <div class="genre-item" >
+        <mat-expansion-panel class="survival">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="genre-title text-light">
+                Survival
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          
+            <a class ="text-light rev-title btn" (click)="getIndex(rev.title)" *ngFor="let rev of survivalRevs">{{rev.title}}<br></a>
+          
+          </mat-expansion-panel>
+    </div>
+
+</div>

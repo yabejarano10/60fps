@@ -34,7 +34,7 @@ body{
 }
 .main ul li a{
     color:whitesmoke;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -44,7 +44,7 @@ body{
 }
 .main ul li a:hover{
     transition: 1s;
-    color: #420069;
+    color: #550086;
 }
 #navbar{
     width: 100%;
@@ -63,6 +63,7 @@ body{
     transition: 1s;
     border-radius: 50px;
     margin-left: -50px;
+    z-index: 2;
 }
 .logo:hover{
     transform: scale(-1.01);

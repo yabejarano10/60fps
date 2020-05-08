@@ -27,6 +27,7 @@ p {
 
 .bg {
   background-image: url('https://i.ytimg.com/vi/-MKapbz0GIo/maxresdefault.jpg');
+  z-index: -220;
   opacity: 0.4;
   height: 50vh;
   box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset;

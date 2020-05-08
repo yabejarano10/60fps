@@ -1,0 +1,50 @@
+.reviews-header {
+    position: relative;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.genres-menu {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.accion {
+    background: rgb(207, 48, 80);
+}
+
+.terror {
+    background: darkmagenta;
+}
+.rol{
+    background: darkorange;
+}
+.aventuras{
+    background: rgb(92, 124, 92);
+}
+.plataformas{
+    background: goldenrod ;
+}
+.metroidvania{
+    background: peru;
+}
+.autos{
+    background: royalblue;
+}
+.simuladores{
+    background: silver;
+}
+.survival{
+    background: green;
+}
+.genre-title{
+    font-size: 18px !important;
+}
+.genre-item{
+    margin-bottom: 10px;
+}
+.rev-title{
+    font-size: 20px;
+}
