@@ -15,6 +15,7 @@ export class ReviewDetailComponent implements OnInit {
 
   review:Review;
   game:Game;
+  reviewByParag:string[] = [];
   constructor(private route: ActivatedRoute,
               private _revService:ReviewsService,
               private _gameService:GamesService,
@@ -24,10 +25,18 @@ export class ReviewDetailComponent implements OnInit {
     const id = this.route.snapshot.params["id"];
     this.review = this._revService.getReviewDetail(id);
     this.game = this._gameService.getGamebyName(this.review.game);
+    
+    this.reviewByParag = this.review.fullReview.split("line");
+
   }
 
   getUrl():SafeResourceUrl{
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.game.trailer);
+  }
+
+  getReviewFixed()
+  {
+    this.reviewByParag = this.review.fullReview.split("line");
   }
 
 }
