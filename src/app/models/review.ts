@@ -3,4 +3,6 @@ export interface Review{
     genre:string;
     fullReview:string;
     game:string;
+    puntosFavor:string[];
+    puntosContra:string[];
 }

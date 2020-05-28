@@ -1,7 +1,37 @@
-<div class="detail-header">
-    <h1>{{review.title}}</h1>
-    <p>{{review.genre}}</p>
-</div>
-<img class="detail-banner" src="{{game.img}}"/>
+<div class="detail-container">
+    <div class="container">
+        <img class="header" src="{{game.img}}" alt="Snow" style="width:100%;">
+        <h1 class="centered">{{game.name}}</h1>
+    </div>
 
-<p class="text-light text-center m-5">{{review.fullReview}}</p>
+    <div class="review">
+        <div class="game-trailer">
+            <iframe width="560" height="315" [src]="getUrl()" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+        <p class="text-light text-left mt-5 ">{{review.fullReview}}</p>
+    </div>
+
+    <div class="score p-3">
+        <div class="row">
+            <div class="col-md-4 p-5">
+                <div class="hexagon"><span>{{game.score}}</span></div>>
+            </div>
+            <div class="col-md-4 p-3">
+                <h3>Puntos a favor</h3>
+                <ul *ngFor="let good of review.puntosFavor">
+                    <li class="text-light"><i class="fa fa-plus-circle"></i>  {{good}}</li>
+                </ul>
+            </div>
+            <div class="col-md-4 p-3">
+                <h3>Puntos en contra</h3>
+                <ul *ngFor="let bad of review.puntosContra">
+                    <li class="text-light"><i class="fa fa-minus-circle"></i>  {{bad}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

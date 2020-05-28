@@ -5,4 +5,5 @@ export interface Game{
     img: string;
     sumary: string;
     score:number;
+    trailer:string;
 }

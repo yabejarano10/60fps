@@ -1,12 +1,107 @@
-.detail-header{
+.container {
+    padding: 0;
     position: relative;
-    margin: 10px;
-    color: rgb(255, 255, 255);
     text-align: center;
-}
-.detail-banner{
-    margin-right: auto;
-    margin-left: auto;
+    color: white;
     height: 50vh;
-    width: 90%;
+    MIN-width: 100%;
+    margin: 0;
+}
+
+.header {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+
+.game-trailer {
+    position: relative;
+    float: left;
+    margin-left: 1.75rem;
+    margin-right: 2.75rem;
+}
+
+.detail-container {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.review {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.score {
+    padding: 3rem;
+    padding-top: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.308);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+}
+
+span{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    color: whitesmoke;
+}
+h3{
+    color: whitesmoke;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*HEXAGON*/
+
+.hexagon {
+    position: relative;
+    width: 7.5vw;
+    height: 7vh;
+    background: lightblue;
+}
+
+.hexagon::before, .hexagon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    position: absolute;
+}
+
+.hexagon::before {
+    left: 0%;
+    transform: rotate(60deg);
+}
+
+.hexagon::after {
+    left: 0%;
+    transform: rotate(-60deg);
+}
+
+.hexagon, .hexagon::before, .hexagon::after {
+    background: transparent;
+    border: 1px solid #fff;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
